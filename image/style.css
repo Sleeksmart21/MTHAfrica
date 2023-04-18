@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+/* Rectangle 1 */
+.navbar{
+position: absolute;
+width: 1440px;
+height: 181px;
+left: 0px;
+top: 0px;
+
+/* dark blue */
+
+background: #1D1A55;
+}
+
+.navbar ul{ 
+    padding: 0; 
+    margin: 0; 
+    justify-content: space-evenly;
+    list-style: none;
+} 
+
+.navbar li{ 
+    float: right; 
+    text-align: center;
+} 
+
+.navbar li a { 
+    /* display: inline-block;  */
+    /* text-align: right;  */
+    padding: 14px;
+    color: rgb(241, 234, 234);
+    text-decoration: none;
+}
