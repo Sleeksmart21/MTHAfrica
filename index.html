@@ -5,25 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" />
     <title>Home</title>
   </head>
   <body>
     <div class="Navitem">
-        <nav>
+      <nav>
+        <div class="logo">
           <a href="/index.html"><img src="image/mthlogo.png.png" class="logo" alt="MTHAfrica Logo" /></a>
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-          <ul class="nav">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="community.html">Join Our Community</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
+        </div>
+        <ul class="nav-links">  
+          <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+          <li><a href="services.html"><i class="fa fa-envelope"></i> Services</a></li>
+          <li><a href="community.html"><i class="fa fa-sign-in"></i> Join Our Community</a></li>
+          <li><a href="contact.html"><i class="fa fa-user-plus"></i> Contact Us</a></li>
+          <!-- <li><a href=""><i class="fa fa-newspaper-o"></i> Subscribe</a></li> -->
+          <!-- <li><a href="forum.html"><i class="fa fa-comments-o"></i> Forum</a></li> -->
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+      </nav>
+        <!-- <nav> -->
+          <!-- <a href="/index.html"><img src="image/mthlogo.png.png" class="logo" alt="MTHAfrica Logo" /></a> -->
+          <!-- <input type="checkbox" id="check"> -->
+          <!-- <label for="check" class="checkbtn"> -->
+            <!-- <i class="fas fa-bars"></i> -->
+          <!-- </label> -->
+          <!-- <ul class="nav"> -->
+            <!-- <li><a class="active" href="index.html">Home</a></li> -->
+            <!-- <li><a href="about.html">About Us</a></li> -->
+            <!-- <li><a href="services.html">Services</a></li> -->
+            <!-- <li><a href="community.html">Join Our Community</a></li> -->
+            <!-- <li><a href="contact.html">Contact Us</a></li> -->
+          <!-- </ul> -->
+        <!-- </nav> -->
     </div>
       <div class="banner">
         <h1>WELCOME TO THE WORLD OF DIGITAL TECHNOLOGY</h1>
@@ -134,7 +154,8 @@
       <p class="products-item-start">PRODUCTS</p>
       <div class="products-class">
         <div class="products-item">
-          <img class="products-item-img" src="image/techie-img.png"/>
+          <div><img class="products-item-img" src="image/techie-img.png"/></div>
+          <!-- <div class="products-item-img"><img src="image/techie-img.png"/></div> -->
           <div class="products-item-para">
             <p class="e-learning-item">
             IT e-Learning Platforms
@@ -146,7 +167,8 @@
         </div>
 
         <div class="products-item">
-          <img class="products-item-img" src="image/payment-img.png"/>
+          <div ><img class="products-item-img" src="image/payment-img.png"/></div>
+          <!-- <div class="products-item-img"><img src="image/payment-img.png"/></div> -->
           <div class="products-item-para">
             <p class="e-learning-item">
               SlimPay
@@ -160,7 +182,8 @@
         </div>
 
         <div class="products-item">
-          <img class="products-item-img" src="image/ebook-img.png"/>
+          <div><img class="products-item-img" src="image/ebook-img.png"/></div>
+          <!-- <div class="products-item-img"><img src="image/ebook-img.png"/></div> -->
           <div class="products-item-para">
             <p class="e-learning-item">
             Interactive Ebook
@@ -207,21 +230,25 @@
 
     
     <footer class="footer">
-      <div class="footer-mail">
-        <img src="image/mthlogo.png.png"/>
-        <p>By subscribing to Mobile Tech Hub, you consent to receive recurring automated messages 
-          (e.g. tech news and opportunities, etc) via automated technology including email.
-        </p>
+      <div class="footer-mails">
+        <div class="footer-mail">
+          <img style="width: 100px; height: 100px;" class="logo" src="image/mthlogo.png.png"/>
+          <p style="font-size: 30px; text-align: center;">By subscribing to Mobile Tech Hub, you consent to receive recurring automated messages 
+            (e.g. tech news and opportunities, etc) via automated technology including email.
+          </p>
+        </div>
+        <p style="align-items: center; font-size: 30px;">Join Our Mailing List</p>
+        <div class="mails">
+        <input type="text" value="" name="mail" class="mails-list" placeholder="@johnny2@gmail.com"/>
+        <button class="community-btn1" value="submit">Subscribe</button>
+        </div>
       </div>
-      <p>Join Our Mailing List</p>
-      <input type="text" value="mails" name="mail" class="mails-list" placeholder="@johnny2@gmail.com"/>
-      <button class="community-btn1" value="submit">Subscribe</button>
-      
+
       <div class="container">
         <div class="row">
           <div class="footer-col">
             <h4>About</h4>
-            <ul>
+            <ul class="social-icons">
               <li><a href="about.html">About Us</a></li>
               <li><a href="contact.html">Contact Us</a></li>
               <li><a href="">Jobs</a></li>
@@ -233,7 +260,7 @@
           </div>
           <div class="footer-col">
             <h4>Community</h4>
-            <ul>
+            <ul class="social-icons">
               <li><a href="">Partners</a></li>
               <li><a href="">Become a Partner</a></li>
               <li><a href="">Services</a></li>
@@ -248,18 +275,33 @@
           </div>
           <div class="footer-col">
             <h4>Follow Us</h4>
-            <ul>
-              <li><a href=""><i class="fab- fa-facebook-f"></i>Facebook</a></li>
-              <li><a href=""><i class="fab- fa-twitter"></i>Twitter</a></li>
-              <li><a href=""><i class="fab- fa-instagram"></i>Instagram</a></li>
-              <li><a href=""><i class="fab- fa-youtube"></i>Youtube</a></li>
-              <li><a href=""><i class="fab- fa-whatsapp"></i>Whatsapp</a></li>
-              <li><a href=""><i class="fab- fa-linkedin-in"></i>LinkedIn</a></li>
+            <ul class="social-icons">
+              <a href="#" title="facebook">
+                <i class="fa fa-facebook-square" aria-hidden="true">Facebook</i>
+              </a>
+              <a href="#" title="twitter">
+                <i class="fa fa-twitter-square" aria-hidden="true">Twitter</i>
+              </a>
+              <a href="#" title="instagram">
+                <i class="fa fa-instagram" aria-hidden="true">Instagram</i>
+              </a>
+              <a href="#" title="youtube">
+                <i class="fa fa-youtube-square" aria-hidden="true">Youtube</i>
+              </a>
+              <a href="#" title="linkedin">
+                <i class="fa fa-linkedin-square" aria-hidden="true">LinkedIn</i>
+              </a>
+              <!-- <li><a href=""><i class="fab- fa-facebook-f"></i>Facebook</a></li> -->
+              <!-- <li><a href=""><i class="fab- fa-twitter"></i>Twitter</a></li> -->
+              <!-- <li><a href=""><i class="fab- fa-instagram"></i>Instagram</a></li> -->
+              <!-- <li><a href=""><i class="fab- fa-youtube"></i>Youtube</a></li> -->
+              <!-- <li><a href=""><i class="fab- fa-whatsapp"></i>Whatsapp</a></li> -->
+              <!-- <li><a href=""><i class="fab- fa-linkedin-in"></i>LinkedIn</a></li> -->
             </ul>
           </div>
           <div class="footer-col">
             <h4>Terms</h4>
-            <ul>
+            <ul class="social-icons">
               <li><a href="">Privacy Policy</a></li>
               <li><a href="">Cookie Settings</a></li>
               <li><a href="">Site Map</a></li>

@@ -75,7 +75,7 @@ nav{
     padding-left: 10%;
     padding-right: 10%;
     height: 120px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     background-color: #ffffff;
 }
 nav ul li{
@@ -248,15 +248,32 @@ h1 h2{
     padding: 40px 0px;
 }
 .products-item{
-    display: flex;
-    justify-content: center;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* justify-content: center; */
     justify-content: space-evenly;
+    border: 2px  solid  green;
     /* margin: 20px 10px; */
 }
 .products-item-img{
-    width: 50%;
-    padding: 0px 50px;
-
+    /* display: flex; */
+    /* flex-direction: row; */
+    margin: 20px 20px;
+    /* max-width: 500px; */
+    width: 100%;
+    padding: 20px 40px;
+    /* padding-left: 25%; */
+}
+.products-item-para{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    /* padding-left: 20px; */
+    align-items: center;
+    justify-content: center;
+    color: #1D1A55;
+    font-size: larger;
 }
 
 
@@ -278,20 +295,82 @@ ul{
     padding: 70px 0;
 }
 .footer-col{
+    /* justify-content: center; */
+    /* text-align: center; */
     width: 25%;
     padding: 0 15px;
 }
+
+.footer-mails{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    color: #bbbbbb;
+    font-size: 18px;
+}
+.footer-mail{
+    display: flex;
+    /* grid-template-columns: 10% 90%; */
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 40px;
+}
+.mails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mails-list{
+    margin-top: 30px;
+    height: 80px;
+    width: 50%;
+    font-weight: 700;
+    color: #bbbbbb;
+    border: 2px solid#bbbbbb;
+    text-align: center;
+    background: #1D1A55;
+    font-size: 24px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.community-btn1{
+    justify-content: center;
+    width: 180px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    /* margin: 25%; */
+}
+.testimonial-item{
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+.testimonial-img{
+    width: 150px;
+    height: 100px;
+}
+.testimonial-img1{
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+}
+
 .footer-col h4{
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-weight: 500;
     position: relative;
 }
 .footer-col h4::before{
     content: '';
     position: absolute;
+    /* align-content: center; */
     left: 0;
     bottom: -10px;
     background-color: #FF931E;
@@ -303,33 +382,84 @@ ul{
     margin-bottom: 10px;
 }
 .footer-col ul li a{
-    font-size: 16px;
+    line-height:30px;
+    font-size:18px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+    /* font-size: 18px; */
     text-transform: capitalize;
     text-decoration: none;
-    font-weight: 300;
+    /* font-weight: 300; */
     color: #bbbbbb;
-    display: block;
-    transition: all 0.3s ease;
+    /* display: block; */
+    /* transition: all 0.3s ease; */
 }
 .footer-col ul li a:hover{
-    color: #ffffff;
-    padding-left: 8px;
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+    /* color: #ffffff; */
+    /* padding-left: 8px; */
 }
 /* responsiveness */
-@media(max-width: 767px){
-    .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
-        justify-content: center;
+@media (max-width: 768px) {
+    nav {
+    flex-direction: column;
+    align-items: flex-start;
     }
-}
-@media(max-width: 574px){
-    .footer-col{
-        width: 100%;
-        justify-content: center;
+    
+    .nav-links {
+    margin-top: 20px;
     }
-}
-
+    
+    .nav-links li {
+    margin: 0;
+    margin-bottom: 10px;
+    }
+    
+    .main-content {
+    flex-direction: column;
+    }
+    
+    .program, .research {
+    margin-bottom: 50px;
+    }
+    
+    .image-blocks {
+    flex-wrap: wrap;
+    }
+    
+    .block {
+    margin-bottom: 50px;
+    }
+    }
+/* @media(max-width: 767px){ */
+    /* .footer-col{ */
+        /* width: 50%; */
+        /* margin-bottom: 30px; */
+        /* justify-content: center; */
+    /* } */
+/* } */
+/* @media(max-width: 574px){ */
+    /* .footer-col{ */
+        /* width: 100%; */
+        /* justify-content: center; */
+    /* } */
+/* } */
+/*  */
 /* style for social-links */
 
 /*.footer-col .social-links{
@@ -348,6 +478,46 @@ ul{
     color: #FF931E;
     background-color: #ffffff;
 }*/
+
+.social-icons{
+	/* padding:30px; */
+	background-color: none;
+    /* text-align: center; */
+}
+.social-icons a{
+    /* color:#fff; */
+    color:#bbbbbb;
+    line-height:10px;
+    display: block;
+    font-size:0px;
+    margin: 0 5px;
+    text-decoration:none;
+    margin-bottom: 20px;
+}
+.social-icons a i{
+	line-height:30px;
+  font-size:18px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1); 
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1); 
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.social-icons a:hover i{
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);   
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+}
 
 
 
